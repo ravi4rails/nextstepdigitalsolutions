@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
   get 'ruby-on-rails-training-details' => "home#rails_training"
+  get 'java-training-details' => "home#java_training"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

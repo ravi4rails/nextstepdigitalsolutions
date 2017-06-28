@@ -8,4 +8,7 @@ class HomeController < ApplicationController
 
   end
 
+  def java_training
+  end
+
 end
