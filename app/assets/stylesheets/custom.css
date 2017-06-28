@@ -12,3 +12,22 @@
   width:100%;
   height:200px;
 }
+
+@media screen and (max-width:767px){
+  .training-terms p{
+    font-size: 12px;
+  }
+  .training-title h2 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .subject-training-banner img{
+    width:100%;
+    height:150px;
+  }
+
+  .inner-ul li{
+    font-size: 13px;
+  }
+}
