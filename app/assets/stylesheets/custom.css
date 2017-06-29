@@ -31,3 +31,16 @@
     font-size: 13px;
   }
 }
+
+.rails-model {
+  background-color: #b71c1c;
+  color:white;
+}
+
+.rails-model .modal-header{
+  border:none;
+}
+
+.rails-model .modal-footer{
+  border:none;
+}

@@ -1,5 +1,54 @@
-<%= render "layouts/site_header" %>
-
+<%#= render "layouts/site_header" %>
+<div class="header">
+  <div class="fixed-header">
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="logo wow slideInLeft" data-wow-delay="0.3s">
+              <a class="navbar-brand" href="/">
+                <%= image_tag "logo-2.png" %>
+              </a>
+            </div>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <nav class="cl-effect-1">
+              <ul class="nav navbar-nav">
+               <li><%= link_to "Home", "/" %></li>
+               <li><a href="#about" class="scroll">About</a></li>
+               <li><a href="#services" class="scroll">Services</a></li>
+               <li><a href="#portfolio" class="scroll">Portfolio</a></li>
+               <li><a href="#contact" class="scroll">Contact</a></li>
+             </ul>
+           </nav>
+           <!-- script-for sticky-nav -->
+           <script>
+            $(document).ready(function() {
+              var navoffeset=$(".header").offset().top;
+              $(window).scroll(function(){
+                var scrollpos=$(window).scrollTop();
+                if(scrollpos >=navoffeset){
+                  $(".header").addClass("fixed");
+                }else{
+                  $(".header").removeClass("fixed");
+                }
+              });
+            });
+          </script>
+        </div>
+        <div class="clearfix"> </div>
+      </nav>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+</div>
+</div>
 <div class="subject-training-banner">
   <%= image_tag "RailsBanner.jpg", class: "img-responsive" %>
 </div>
@@ -362,18 +411,41 @@
     </div>
   </div>
 </div>
-
-<script type="text/javascript">
-  $('.training-content').attr('unselectable','on')
-     .css({'-moz-user-select':'-moz-none',
-           '-moz-user-select':'none',
-           '-o-user-select':'none',
-           '-khtml-user-select':'none', /* you could also put this in a class */
-           '-webkit-user-select':'none',/* and add the CSS class here instead */
-           '-ms-user-select':'none',
-           'user-select':'none'
+<div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="memberModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rails-model">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="memberModalLabel">Thank you for signing in!</h4>
+      </div>
+      <div class="modal-body ">
+        <p>However the account provided is not known.
+          <BR>If you just got invited to the group, please wait for a day to have the database synchronized.</p>
+            <p>You will now be shown the Demo site.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $('.training-content').attr('unselectable','on')
+      .css({'-moz-user-select':'-moz-none',
+       '-moz-user-select':'none',
+       '-o-user-select':'none',
+       '-khtml-user-select':'none', /* you could also put this in a class */
+       '-webkit-user-select':'none',/* and add the CSS class here instead */
+       '-ms-user-select':'none',
+       'user-select':'none'
      }).bind('selectstart', function(){ return false; });
-  $('.training-content').bind('contextmenu', function(e) {
-    return false;
-  });
-</script>
+      $('.training-content').bind('contextmenu', function(e) {
+        return false;
+      });
+      $(document).ready(function () {
+
+        $('#memberModal').modal('show');
+
+      });
+    </script>
