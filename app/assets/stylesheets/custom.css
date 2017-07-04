@@ -44,3 +44,36 @@
 .rails-model .modal-footer{
   border:none;
 }
+
+.test-terms li, .test-terms h4, .test-terms p{
+  font-size: 20px;
+}
+
+.training-terms-model {
+  background-color: #79840A;
+  color:#fff;
+}
+
+.training-terms-model .modal-header {
+  border-bottom: none;
+}
+
+.training-terms-model .modal-footer {
+  border-top: none;
+}
+
+.training-terms-model .close {
+    float: right;
+    font-size: 60px;
+    font-weight: normal;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 1px 0 #fff;
+    margin-top: -13px;
+    filter: alpha(opacity=none);
+    opacity: none !important;
+}
+
+.custom-close {
+  opacity: none !important;
+}

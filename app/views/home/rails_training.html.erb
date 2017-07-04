@@ -62,6 +62,9 @@
     <p><strong>Maximum Batch Size: </strong>5 Students</p>
     <p><strong>Morning Batch Timing: </strong>7:00 AM to 9:00 AM</p>
     <p><strong>Evening Batch Timing: </strong>5:00 PM to 7:00 PM</p>
+     <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">
+      Terms and Conditions for Fee Consesion
+    </button>
   </div>
   <div class="row">
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -420,32 +423,53 @@
         <h4 class="modal-title" id="memberModalLabel">Thank you for signing in!</h4>
       </div>
       <div class="modal-body ">
-        <p>However the account provided is not known.
-          <BR>If you just got invited to the group, please wait for a day to have the database synchronized.</p>
-            <p>You will now be shown the Demo site.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>
-        </div>
+        <p>However the account provided is not known.<BR>If you just got invited to the group, please wait for a day to have the database synchronized.</p>
+        <p>You will now be shown the Demo site.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
       </div>
     </div>
-    <script type="text/javascript">
-      $('.training-content').attr('unselectable','on')
-      .css({'-moz-user-select':'-moz-none',
-       '-moz-user-select':'none',
-       '-o-user-select':'none',
-       '-khtml-user-select':'none', /* you could also put this in a class */
-       '-webkit-user-select':'none',/* and add the CSS class here instead */
-       '-ms-user-select':'none',
-       'user-select':'none'
-     }).bind('selectstart', function(){ return false; });
-      $('.training-content').bind('contextmenu', function(e) {
-        return false;
-      });
-      $(document).ready(function () {
+  </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content training-terms-model">
+      <div class="modal-header test-terms">
+        <button type="button" class="close custom-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="myModalLabel">Terms and Conditions for Fees</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="test-terms">
+          <li>Test will contain 50 technical questions of C, DBMS, Data Structure.</li>
+          <li>Level of Test: 40% Basic Questions, 40% Moderate Questions, 20% Complex Questions.</li>
+          <li>Course Fee will be reduced to 50% if candidate will get 75% or More Marks in test.</li>
+          <li>Course Fee will be reduced to 40% if candidate will get 75% to 60%  Marks in test.</li>
+          <li>Course Fee will be reduced to 30% if candidate will get 60% to 50%  Marks in test.</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <p><strong>Note: </strong>Candidates need to register for giving the test. Registration fee is Rs. 500. Once you get registered a button to start the test will appeare.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $('.training-content').attr('unselectable','on')
+  .css({'-moz-user-select':'-moz-none',
+   '-moz-user-select':'none',
+   '-o-user-select':'none',
+   '-khtml-user-select':'none', /* you could also put this in a class */
+   '-webkit-user-select':'none',/* and add the CSS class here instead */
+   '-ms-user-select':'none',
+   'user-select':'none'
+ }).bind('selectstart', function(){ return false; });
+  $('.training-content').bind('contextmenu', function(e) {
+    return false;
+  });
+  $(document).ready(function () {
 
-        $('#memberModal').modal('show');
+    $('#memberModal').modal('show');
 
-      });
-    </script>
+  });
+</script>
