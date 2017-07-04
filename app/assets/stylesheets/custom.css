@@ -22,6 +22,28 @@
     font-weight: bold;
   }
 
+  .course-banner img{
+    height:200px !important;
+  }
+
+  .course-description p {
+    margin-bottom:4%;
+    text-align: justify;
+  }
+
+  .course-title h1 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .course-description h2 {
+    font-weight: bold;
+    margin-bottom: 3%;
+    font-size:20px;
+    text-align: center;
+  }
+
   .subject-training-banner img{
     width:100%;
     height:150px;
@@ -63,17 +85,64 @@
 }
 
 .training-terms-model .close {
-    float: right;
-    font-size: 60px;
-    font-weight: normal;
-    line-height: 1;
-    color: #fff;
-    text-shadow: 0 1px 0 #fff;
-    margin-top: -13px;
-    filter: alpha(opacity=none);
-    opacity: none !important;
+  float: right;
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 1px 0 #fff;
+  margin-top: -13px;
+  filter: alpha(opacity=none);
+  opacity: none !important;
 }
 
 .custom-close {
   opacity: none !important;
+}
+.course-title {
+  margin-top: 3%;
+  margin-bottom: 4%;
+}
+
+.course-title h1 {
+  font-weight: bold;
+}
+.course-banner img{
+  height:400px;
+}
+
+.course-description h2 {
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.course-description {
+  margin-top:3%;
+}
+
+.course-description p {
+  margin-bottom:4%;
+}
+.course-opts {
+  border:3px solid #F44336;
+}
+
+.learn-opts h1{margin-top: 3%;margin-bottom: 3%;font-size: 22px;font-weight: bold;}
+
+.learn-opts ul li {margin-bottom: 3%;}
+
+.learn-opts-ul {
+  list-style: none;
+  padding: 0;
+}
+.learn-opts-ul li {
+  padding-left: 1.3em;
+}
+.learn-opts-ul li:before {
+  content: "\f02d"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+  color:#F44336;
 }

@@ -5,6 +5,7 @@
   *= require template/animate
   *= require template/galleryeffect
   *= require fonts.css.erb
+  *= require font-awesome
   *= require custom
 
 */

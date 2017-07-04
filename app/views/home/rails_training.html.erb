@@ -1,5 +1,5 @@
-<%#= render "layouts/site_header" %>
-<div class="header">
+<%= render "layouts/site_header" %>
+<!-- <div class="header">
   <div class="fixed-header">
     <div class="navbar-wrapper">
       <div class="container">
@@ -27,7 +27,6 @@
                <li><a href="#contact" class="scroll">Contact</a></li>
              </ul>
            </nav>
-           <!-- script-for sticky-nav -->
            <script>
             $(document).ready(function() {
               var navoffeset=$(".header").offset().top;
@@ -47,9 +46,8 @@
     </div>
     <div class="clearfix"> </div>
   </div>
-</div>
-</div>
-<div class="subject-training-banner">
+</div> -->
+<!-- <div class="subject-training-banner">
   <%= image_tag "RailsBanner.jpg", class: "img-responsive" %>
 </div>
 <div class="container">
@@ -453,6 +451,69 @@
       </div>
     </div>
   </div>
+</div> -->
+<div class="container" style="margin-bottom: 2%; margin-top: 10%;">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="course-title hidden-xs">
+        <h1 class="">Ruby on Rails Web Development Training</h1>
+      </div>
+      <div class="well course-title visible-xs">
+        <h1 class="">Ruby on Rails Web Development Training</h1>
+      </div>
+      <div class="course-banner">
+        <%= image_tag "RailsBanner.jpg", class: "img-responsive" %>
+      </div>
+      <div class="course-description">
+        <h2 class="hidden-xs">Course Description</h2>
+        <div class="well visible-xs">
+          <h2>Course Description</h2>
+        </div>
+        <p>We will start our ruby on rails training with a quiz based on basic programming concepts and data structures. After this quiz we will initiate our Ruby on Rails training with fundamental Object Oriented Programming concepts. And then we will teach Ruby Programming like Ruby Syntax, Ruby scripts including OOPs concepts, Modules, Blocks and Methods. After completion of this phase we will move the Ruby on Rails framework to build the backend of a web application. But before that we will take an introductory session on web development</p>
+        <p>Meanwhile we will teach concepts of Database Management System to our students so that they create their own database to work on their own projects using MVC (Model, View and Controller) architecture of Rails platform.Till yet students will find themselves able to develope application in Rails. Now we will introduce students about Javascript, Jquery and Bootstrap for template integrations.</p>
+        <p>This course is completely project based. Students will be divided into groups of five members in a group. And each group will build one apllication together to ensure complete understanding of the framework. Students are allowed to build their own application and our trainers and team will provide necessary support.</p>
+        <p>The course also includes the code deployment over GIT and heroku, hence we will provide training for GIT, Heroku. Our Ruby on Rails training course will capture all the basic requirements to work as a backend developer in any organization.This is a a course with no loose ends for someone who wants to learn the rails platform.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="course-opts"></div>
+          <div class="learn-opts">
+            <h1>Here's What Students Will Learn.</h1>
+            <ul class="learn-opts-ul">
+              <li>Learn to develop back ends of websites with Rails.</li>
+              <li>Learn Object Oriented Programming in  Ruby.</li>
+              <li>Ensure that the websites you build are dynamic, sustainable, cost effective, and high on quality and maintainability.</li>
+              <li>Learn how applications are built from scratch. You will get to know how an idea written on paper can be turned into an application used by people.</li>
+            </ul>
+          </div>
+          <div class="course-opts"></div>
+          <div class="learn-opts">
+            <h1>What Pre-requiests For You</h1>
+            <ul class="learn-opts-ul">
+              <li>Basic Knowledge of Object Oriented Programming language would be beneficial.</li>
+              <li>Prior Knowledge of programming is a plus, however not mandatory.</li>
+              <li>Basics of any database.</li>
+              <li>Basic of Front End Designing tools such as HTML, CSS and JavaScript is desirable, however not mandatory.</li>
+            </ul>
+          </div>
+          <div class="course-opts"></div>
+          <div class="learn-opts">
+            <h1>Target Audience</h1>
+            <ul class="learn-opts-ul">
+              <li>Students who want to have a job worthy skill set.</li>
+              <li>Software Developers who want to get to an intermediate level with a strong understanding of good programming practices.</li>
+              <li>Web Designers who want to evolve as full stack developers.</li>
+              <li>One making a career shift and wanting to become a developer.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
 </div>
 <script type="text/javascript">
   $('.training-content').attr('unselectable','on')
@@ -467,9 +528,9 @@
   $('.training-content').bind('contextmenu', function(e) {
     return false;
   });
-  $(document).ready(function () {
+  // $(document).ready(function () {
 
-    $('#memberModal').modal('show');
+  //   $('#memberModal').modal('show');
 
-  });
+  // });
 </script>
